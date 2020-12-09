@@ -66,7 +66,7 @@ All commands for SNLI experiments are provided in [experiments_SNLI.sh](./experi
      - run `python selector_and_inference/train_inference.py --train_data $lirex_data_dir/train-expl.json --dev_data $lirex_data_dir/dev-expl.json --test_data $lirex_data_dir/test-expl.json --selector_model $best_selector_model --model_to_save $inference_model_to_save --lr 2e-5 --batch_size 64 --n_epoch 3`
      
 ## Run MultiNLI experiments
-1. Initilize all the environment variables in [experiments_mnli.sh](./experiments_mnli.sh) similarly as above.
+1. Initilize all the environment variables in [experiments_MNLI.sh](./experiments_MNLI.sh) similarly as above.
 2. Run the following commands one by one (for the description of each command, please refer to the SNLI experiments above).
    - Rationalizer
      - `python rationalizer/predict_mnli.py --dev_matched $lirex_data_dir/multinli_dev_matched.jsonl --dev_mismatched $lirex_data_dir/multinli_dev_mismatched.jsonl --model_name $rationalizer_model_name --model_to_load $rationalizer_best_model --output_dir $lirex_data_dir`

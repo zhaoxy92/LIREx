@@ -9,3 +9,9 @@ This repo is the code release of the paper [LIREx: Augmenting Language Inference
 - (for MultiNLI experiments) Please doanload MultiNLI data from https://cims.nyu.edu/~sbowman/multinli/
 
 2. Install required dependencies.
+'''
+pip install conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+pip install stanfordnlp
+pip install transformers
+pip install sklearn
+'''

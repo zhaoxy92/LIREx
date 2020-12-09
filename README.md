@@ -7,3 +7,5 @@ This repo is the code release of the paper [LIREx: Augmenting Language Inference
 1. Download datasets: the work includes two widely used datasets, namely, e-SNLI that is extended from the Stanfard Natural Language Inference corpus (SNLI) and the Multi-genre Natural Language Inference corpus (MultiNLI).
 - (for SNLI experiments) Please download e-SNLI data (SNLI with explanations) from https://github.com/OanaMariaCamburu/e-SNLI
 - (for MultiNLI experiments) Please doanload MultiNLI data from https://cims.nyu.edu/~sbowman/multinli/
+
+2. Install required dependencies.

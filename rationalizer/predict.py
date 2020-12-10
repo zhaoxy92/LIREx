@@ -114,13 +114,13 @@ def prepare_batch_with_lb(batch):
             labels.append(lb)
     #---------------------------------------
     
-    # <s> label </s> <s> sentence </s>
+    # <s> label </s> sentence </s>
     d2 = tokenizer(sents)
     d1 = tokenizer(labels)
     
     for i in range(len(d1['input_ids'])):
-        d1['input_ids'][i].extend(d2['input_ids'][i])
-        d1['attention_mask'][i].extend(d2['attention_mask'][i])
+        d1['input_ids'][i].extend(d2['input_ids'][i][1:])
+        d1['attention_mask'][i].extend(d2['attention_mask'][i][1:])
     
     max_length = max([len(item) for item in d1['input_ids']])
     for i in range(len(d1['input_ids'])):

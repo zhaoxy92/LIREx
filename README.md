@@ -7,9 +7,9 @@ This work aims at improving language inference tasks by incorporating language e
 
 A rationalizer generates rationales and then an explanation generator produces natural language explanations (NLEs) based on the rationales so that the NLEs are highly relevant to human rationales. Finally, the instance selector selects the most plausible explanation and couples it with the original premise-hypothesis pair to make predictions.
 
-For the following example, different rationales would induce different explanations:
+For the following example, different rationales would lead to different explanations (both correct):
 
-<img align="center" src="./images/example.png" width="750" />
+<img align="center" src="./images/example.png" width="600" />
 
 
 ## Installation

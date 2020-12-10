@@ -69,7 +69,7 @@ def prepare_batch(batch):
     lbs = [label2idx[d['gold_label']] for d in batch]
     d_input = {'input_ids':[], 'attention_mask':[]}
     for i in range(len(batch)):
-        text = "{} </s></s> {}".format(batch[i]['premise'], batch[i]['hypothesis'])
+        text = "{} </s> {}".format(batch[i]['premise'], batch[i]['hypothesis'])
         d_cur = tokenizer(text)
         d_input['input_ids'].append(d_cur['input_ids'])
         d_input['attention_mask'].append(d_cur['attention_mask'])

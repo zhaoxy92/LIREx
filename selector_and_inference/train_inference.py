@@ -108,7 +108,7 @@ def prepare_batch(batch, use_max=True):
 
     d_input = {'input_ids':[], 'attention_mask':[]}
     for i in range(len(batch)):
-        text = "{} </s></s> {}".format(batch[i]['premise'], batch[i]['hypothesis'])
+        text = "{} </s> {}".format(batch[i]['premise'], batch[i]['hypothesis'])
         d_cur = tokenizer(text)
         d_input['input_ids'].append(d_cur['input_ids'])
         d_input['attention_mask'].append(d_cur['attention_mask'])
@@ -128,7 +128,7 @@ def prepare_batch(batch, use_max=True):
     d_expls = {'input_ids':[], 'attention_mask':[]}
     for i in range(len(batch)):
         j = sampled_expl_idx[i].item()
-        text = "{} </s></s> {} {}".format(batch[i]['premise'], batch[i]['hypothesis'], batch[i]['expl'][idx2label[j]])
+        text = "{} </s> {} {}".format(batch[i]['premise'], batch[i]['hypothesis'], batch[i]['expl'][idx2label[j]])
         d_cur = tokenizer(text)
         d_expls['input_ids'].append(d_cur['input_ids'])
         d_expls['attention_mask'].append(d_cur['attention_mask'])

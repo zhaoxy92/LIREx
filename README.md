@@ -1,7 +1,9 @@
 # LIREx: Augmenting Language Inference with Relevant Explanations
 This repo is the code release of the paper [LIREx: Augmenting Language Inference with Relevant Explanations](https://sites.google.com/umich.edu/xinyanzhao/home), which is accepted at AAAI-2021.
 
-This work aims at improving language inference tasks by incorporating language explanations
+This work aims at improving language inference tasks by incorporating language explanations, illustrated as following:
+
+![](images/model-whole.png)
 
 ## Installation
 

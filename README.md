@@ -3,7 +3,14 @@ This repo is the code release of the paper [LIREx: Augmenting Language Inference
 
 This work aims at improving language inference tasks by incorporating language explanations, illustrated as following:
 
-![](images/model-whole.png)
+<img align="center" src="./images/model-whole.png" width="750" />
+
+A rationalizer generates rationales and then an explanation generator produces natural language explanations (NLEs) based on the rationales so that the NLEs are highly relevant to human rationales. Finally, the instance selector selects the most plausible explanation and couples it with the original premise-hypothesis pair to make predictions.
+
+For the following example, different rationales would induce different explanations:
+
+<img align="center" src="./images/example.png" width="750" />
+
 
 ## Installation
 

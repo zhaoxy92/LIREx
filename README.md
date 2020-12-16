@@ -26,6 +26,9 @@ pip install transformers
 pip install sklearn
 ```
 
+## Model implementation details
+Due to the limit of space in the main paper, we provide an pdf file that contains detailed information such as model size, parameters, hyperparameters, hardwares, etc., in [supplementary/Appendix.pdf](./supplementary/Appendix.pdf).
+
 ## Run SNLI experiments
 All commands for SNLI experiments are provided in [experiments_SNLI.sh](./experiments_SNLI.sh) as reference. To reproduce the experiments, please use the following steps:
 
